@@ -3,7 +3,7 @@ import os from 'os'
 // Used for controlling the highWaterMark value of the zip that is being streamed
 // The same value is used as the chunk size that is use during upload to blob storage
 export function getUploadChunkSize(): number {
-  return 16 * 1024 * 1024 // 16 MB Chunks
+  return 128 * 1024 * 1024
 }
 
 export function getRuntimeToken(): string {
